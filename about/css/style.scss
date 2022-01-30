@@ -362,14 +362,14 @@ body{
                     input,textarea{
                         display: block;
                         padding: 20px;
-                        width: 30vw;
+                        width: 90%;
                         font-size: 18px;
-                        margin: 20px;
+                        margin-top: 10px;
                     }
 
                     button{
                         background: #835CF4;
-                        margin: 20px;
+                        margin-top: 20px;
                         padding: 20px;
                         border-radius: 10px;
                         border: 0;
@@ -379,7 +379,69 @@ body{
                 }
             }
         }
-    }
+
+        footer{
+            padding: 2em;
+            background: #1C1C1C;
+            
+            .footerContainer{
+                display: flex;
+                color: white;
+                font-family: 'Roboto', sans-serif;
+                margin-top: 20px;
+
+                .leftSide{
+                    h3{
+                      margin-top: 20px;  
+                    }
+
+                    p{
+                        margin-top: 20px;
+                        width: 50%;
+                        line-height: 23px;
+                    }
+
+                    .socialIcons{
+                        display: flex;
+                        margin-top: 20px;
+
+                        .icon{
+                            margin-left: 20px;
+                            
+                            a{
+                                color: white;
+                            }
+
+                            .fab{
+                                font-size: 30px;
+                            }
+                        }
+                    }
+                }
+
+                .rightSide{
+
+                    .telephone{
+                        
+                        p{
+                            margin-top: 10px;
+                        }
+                    }
+
+                    .location{
+                        margin-top: 20px;
+                    }
+
+                    .hours{
+                        margin-top: 20px;
+                        p{
+                            margin-top: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }   
 }
 
 @media(max-width: 920px){
@@ -495,6 +557,18 @@ body{
                     }
                 }
 
+            }
+        }
+
+        .contact{
+            .contactContainer{
+            
+                form{
+                   
+                    input,textarea{
+                        
+                    }
+                }
             }
         }
 

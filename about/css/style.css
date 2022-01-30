@@ -378,18 +378,77 @@ body {
 .Aboutcontainer .container .contact .contactContainer form input, .Aboutcontainer .container .contact .contactContainer form textarea {
   display: block;
   padding: 20px;
-  width: 30vw;
+  width: 90%;
   font-size: 18px;
-  margin: 20px;
+  margin-top: 10px;
 }
 
 .Aboutcontainer .container .contact .contactContainer form button {
   background: #835CF4;
-  margin: 20px;
+  margin-top: 20px;
   padding: 20px;
   border-radius: 10px;
   border: 0;
   color: white;
+}
+
+.Aboutcontainer .container footer {
+  padding: 2em;
+  background: #1C1C1C;
+}
+
+.Aboutcontainer .container footer .footerContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  margin-top: 20px;
+}
+
+.Aboutcontainer .container footer .footerContainer .leftSide h3 {
+  margin-top: 20px;
+}
+
+.Aboutcontainer .container footer .footerContainer .leftSide p {
+  margin-top: 20px;
+  width: 50%;
+  line-height: 23px;
+}
+
+.Aboutcontainer .container footer .footerContainer .leftSide .socialIcons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 20px;
+}
+
+.Aboutcontainer .container footer .footerContainer .leftSide .socialIcons .icon {
+  margin-left: 20px;
+}
+
+.Aboutcontainer .container footer .footerContainer .leftSide .socialIcons .icon a {
+  color: white;
+}
+
+.Aboutcontainer .container footer .footerContainer .leftSide .socialIcons .icon .fab {
+  font-size: 30px;
+}
+
+.Aboutcontainer .container footer .footerContainer .rightSide .telephone p {
+  margin-top: 10px;
+}
+
+.Aboutcontainer .container footer .footerContainer .rightSide .location {
+  margin-top: 20px;
+}
+
+.Aboutcontainer .container footer .footerContainer .rightSide .hours {
+  margin-top: 20px;
+}
+
+.Aboutcontainer .container footer .footerContainer .rightSide .hours p {
+  margin-top: 10px;
 }
 
 @media (max-width: 920px) {
