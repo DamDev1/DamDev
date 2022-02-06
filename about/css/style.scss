@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 
 body{
@@ -18,22 +19,48 @@ body{
                 justify-content: space-between;
 
                 .brand{
-                    font-size: 23px;
+                    font-size: 30px;
                     font-family: Arial, Helvetica, sans-serif;
                     font-weight: bold;
+                    margin-top: 10px;
                 }
 
                 span{
                     color: #835CF4;
+                    position: relative;
                 }
 
-                .toggle{
+                span::after{
+                    width: 1.8em;
+                    height: 3px;
+                    background: black;
+                    position: absolute;
+                    content: '';
+                    left: 0;
+                    bottom: 0;
+                }
+
+                .scrollDown{
                     right: 30px;
-                    font-size: 28px;
+                    font-size: 20px;
+                    border: 3px solid #1C1C1C;
+                    padding: 10px;
+                    border-radius: 10px;
+                    cursor: pointer;
 
                     a{
                         color: black;
+                        font-family: 'Roboto', sans-serif;
                         text-decoration: none;
+                    }
+                }
+
+                .scrollDown:hover{
+                    background: #1C1C1C;
+                    transition: 2s;
+
+                    a{
+                        color: white;
                     }
                 }
 
@@ -300,6 +327,7 @@ body{
 
                     #justBe{
                         background-image: url("../image/justNe.png");
+                        margin-top: 50px;
                     }
 
                     .projectText{
@@ -379,69 +407,70 @@ body{
                 }
             }
         }
+    }   
 
-        footer{
-            padding: 2em;
-            background: #1C1C1C;
-            
-            .footerContainer{
-                display: flex;
-                color: white;
-                font-family: 'Roboto', sans-serif;
-                margin-top: 20px;
+    footer{
+        background: #1C1C1C;
+        padding: 2em;
+        font-family: 'Roboto', sans-serif;
 
-                .leftSide{
-                    h3{
-                      margin-top: 20px;  
-                    }
+        .footerContainer{
+            color: white;
+            display: flex;
+            margin-top: 30px;
 
-                    p{
-                        margin-top: 20px;
-                        width: 50%;
-                        line-height: 23px;
-                    }
+            .leftSide{
 
-                    .socialIcons{
-                        display: flex;
-                        margin-top: 20px;
+                h3{
+                    margin-top: 30px;
+                }
 
-                        .icon{
-                            margin-left: 20px;
-                            
-                            a{
-                                color: white;
-                            }
+                p{
+                    margin-top: 10px;
+                }
 
-                            .fab{
-                                font-size: 30px;
-                            }
+                .socialIcons{
+                    display: flex;
+                    margin-top: 20px;
+
+                    .icon{
+                        font-size: 30px;
+
+                        a{
+                            color: white;
                         }
+                    }
+
+                    .icon:nth-child(2),
+                    .icon:nth-child(3){
+                        margin-left: 10px;
+                    }
+                }
+            }
+
+            .rightSide{
+
+                .telephone{
+                    
+                    p{
+                        margin-top: 5px;
                     }
                 }
 
-                .rightSide{
+                .location{
+                    margin-top: 20px;
+                }
 
-                    .telephone{
-                        
-                        p{
-                            margin-top: 10px;
-                        }
-                    }
+                .hours{
+                    margin-top: 20px;
 
-                    .location{
-                        margin-top: 20px;
-                    }
-
-                    .hours{
-                        margin-top: 20px;
-                        p{
-                            margin-top: 10px;
-                        }
+                    p{
+                        margin-top: 10px;
                     }
                 }
             }
         }
-    }   
+    }
 }
 
 @media(max-width: 920px){
@@ -560,18 +589,18 @@ body{
             }
         }
 
-        .contact{
-            .contactContainer{
-            
-                form{
-                   
-                    input,textarea{
-                        
-                    }
-                }
-            }
-        }
+    }
 
+
+    footer{
+
+        .footerContainer{
+            
+            .rightSide{
+                display: none;
+            }
+            
+        }
     }
 }
 
